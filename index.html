@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="laftah.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/ca4ef8ed5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylr.css">
+    <title>Home Page</title>
+    <style>
+        
+        .div_1{
+            /* background-color: blue; */
+            width: 70%;
+            float: left;
+            text-align: center;
+            margin-left: -20px;
+        }
+        .div_2{
+            background-color: #062519;
+            /* background-color: brown; */
+            width: 24%;
+            float: right;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 9%;
+            height: 150%;
+            /* height:190vh; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="continer">
+        <header>
+            <div class="container-fluid text-center" style="background: #062519;">
+                <img class="img-responsive " src="laftah.png" alt="laftah logo" width="15%">
+            </div>
+        </header>
+        <!-- end header -->
+       
+       <div class="div_2"><div class="container-fluid justify-self-end">
+        <div class="row">
+            <div class="d-flex flex-column justify-content-between col-auto bg-dark min-vh-100"
+                id="main-sidemenu" style="margin-right: 20%;">
+                <div>
+                    <a href="#"
+                        class="text-white d-none d-sm-inline text-decoration-none d-flex align-items-center ms-4"
+                        role="button">
+                        <span class="fs-5"></span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mt-2 mt-sm-0" id="menu">
+                        <li class="nav-item">
+                            <a href="#sideMenu" data-bs-toggle="collapse" class="nav-link text-white"
+                                aria-current="page">
+                                <i class="fa fa-caret-down"></i>
+                                <span class="ms-2 d-none d-sm-inline">:عرض التعديلات </span>
+                                <i class="fa fa-pen-to-square"></i>
+                            </a>
+                            <hr class="text-white">
+                            <ul class="nav collapse ms-1 flex-column" id="sideMenu" data-bs-parent="#menu">
+                                <li class="nav-item ">
+                                    <a class="nav-link text-white align-items-center" href="http://192.168.100.86:2022/testhoting/work13/main_index.php">
+                                        <span class="ms-1">:إضافة</span>
+                                        <i class="fa-solid fa-file-circle-plus"></i>
+                                    </a>
+    
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#" aria-current="page">
+                                        <span class="ms-1">:بحث</span>
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+    
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="http://192.168.100.86:2022/testhoting/work13/reports.php">
+                                        <span class="ms-1">:التقارير</span>
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                    </a>
+                                    <hr class="text-white">
+                                </li>
+                            </ul>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <span class="ms-2 d-none d-sm-inline">About</span>
+                                <i class="fa fa-book"></i>
+                            </a>
+                            <hr class="text-white">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <span class="ms-2 d-none d-sm-inline">team</span>
+                                <i class="fa fa-users"></i>
+                            </a>
+                            <hr class="text-white">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sideMenu" data-bs-toggle="collapse" class="nav-link text-white">
+                                <span class="ms-2 d-none d-sm-inline">Setting</span>
+                                <i class="fa fa-cog"></i>
+                            </a>
+                            <hr class="text-white">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sideMenu" data-bs-toggle="collapse" class="nav-link text-white">
+                                <span class="ms-2 d-none d-sm-inline">contact</span>
+                                <i class="fa fa-phone"> </i>
+                            </a>
+                            <hr class="text-white">
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div></div>
+
+        <footer>
+            <div class="container-fluid p-3 text-center text-50 fixed-bottom" style="background: #062519;bottom: 0;">
+                <p style=" color: #be9453;">تصميم م. بشاير المطحني &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; اشراف م. وليد
+                    العيسائي</p>
+            </div>
+        </footer>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function getval() {
+            const names_1 = ["Alzahrani", "Makka", "Rania"];
+            const names_2 = ["Tabouk", "Hawia", "Bolvard", "Baha", "Bisha", "Taif"];
+            const names_3 = ["Jeddah", "Store", "Shopra", "Borj", "Jory", "Salam", "Riyadh", "Madina", "Jizan"]
+            var selectedval = document.getElementById('branch-name').value;
+            if (names_1.includes(selectedval)) {
+                document.getElementById('branch-code').value = names_1.indexOf(selectedval) + 201;
+
+            } else if (names_2.includes(selectedval)) {
+                document.getElementById('branch-code').value = names_2.indexOf(selectedval) + 205;
+            } else if (names_3.includes(selectedval)) {
+                document.getElementById('branch-code').value = names_3.indexOf(selectedval) + 212;
+            } else {
+                document.getElementById('branch-code').value = '';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

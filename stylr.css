@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+}
+html{
+    height: 100%;
+}
+
+body {
+    display: block;
+    overflow: auto;
+    min-height: 100%;
+}
+/* body {
+    display: block;
+    overflow: auto;
+} */
+#main-sidemenu{
+margin-left:auto ;
+position: sticky;
+
+
+background-color: #062519 !important;
+height: 100dvh;
+
+}
+h4{
+    color:#be9453;
+    font-weight: 600;
+}
+footer{
+    bottom: 0;
+}
+
+li{
+    /* line-height: 1; */
+    border-bottom: 1px wheat;
+}
+.nav-pills li a:hover {
+    background: #1e1e1e!important;
+    /* color:  #e6e6e6; */
+}
+/* =============== */
+/* form{
+   
+} */
+
+.col-auto{
+    margin-bottom: 0.90em;
+    position: relative;
+}
+input , select {
+    /* for label input */
+    width: 100%;
+    padding: 1em;
+    outline: 0;
+    border: 0.1em solid #062519;
+    background: transparent;
+    font-size: 0.9em;
+    height: 40px; 
+    direction: rtl;
+    border-radius: 4px;
+}
+input[type=number]{
+    height: 40px;
+}
+/* input[type=text]{
+    width: 40px;
+} */
+textarea{
+    width: 100%;
+    /* padding-left: 100%; */
+    /* padding: 0.90em; */
+    outline: 0;
+    border-radius: 4px;
+    border: 0.1em solid #062519;
+    background: transparent;
+    font-size: 20px;
+    direction: rtl;
+
+}
+
+
+label{
+    height: 250%;
+    position: absolute;
+    right:1.8em ;
+    top: 3%;
+    padding-top: 5%;
+    /* padding: 5px; */
+    cursor: text;
+    background: transparent;
+    transition: 0.2s;
+    color: #062519;
+    
+}
+label.date-in  ,label.recipiet-date{
+    right: 2.9em;
+    padding-right: 10%;
+}
+input:focus~label,select:focus~label{
+    top: -30px;
+    font-size: 12px;
+}
+input:valid~label,select:valid~label{
+    top: -30px;
+    font-size: 12px;
+}
+input[type=date]{
+    color: transparent; 
+    /* width: 109%; */
+}
+input[type=date]:focus,
+input[type=date]:valid{
+    
+    color: #000;  
+}
+select{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 5em;
+    padding: 0.1em;
+   
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/* ============================== */
+.row {
+    margin-left: -45px;
+}
+/* ======================== for '*' */
+/* textarea:focus~label,textarea:valid~label {
+
+} */

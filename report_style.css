@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+}
+html{
+    height: 100%;
+}
+
+body {
+    display: block;
+    overflow: auto;
+    min-height: 100%;
+}
+#main-sidemenu{
+    margin-left:auto ;
+    position: sticky;
+    
+    
+    background-color: #062519 !important;
+    height: 100dvh;
+    
+    }
+
+    input [type="radio"]:checked{
+        background-color: #062519;
+    }
+/* #tabel_pr{
+    width: min-content;
+} */
